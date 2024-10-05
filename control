@@ -1,7 +1,7 @@
 Package: com.shepgoba.ccmonoaudio
 Name: CCMonoAudio
 Depends: mobilesubstrate, com.opa334.ccsupport
-Version: 0.1
+Version: 1.2
 Architecture: iphoneos-arm
 Description: Toggle mono audio easily from the control center!
 Maintainer: shepgoba

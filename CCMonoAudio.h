@@ -1,3 +1,5 @@
+@import UIKit;
+
 #import <ControlCenterUIKit/CCUIToggleModule.h>
 #import <dlfcn.h>
 

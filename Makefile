@@ -1,7 +1,12 @@
-include $(THEOS)/makefiles/common.mk
+ifeq ($(THEOS_PACKAGE_SCHEME),rootless)
+	export TARGET = iphone:clang:16.5:15.0
+else
+	export TARGET = iphone:clang:14.5:13.0
+endif
 
-export TARGET = iphone:clang:11.2:11.0
 export ARCHS = arm64 arm64e
+
+include $(THEOS)/makefiles/common.mk
 
 BUNDLE_NAME = CCMonoAudio
 CCMonoAudio_BUNDLE_EXTENSION = bundle
